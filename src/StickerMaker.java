@@ -28,7 +28,7 @@ public class StickerMaker {
         graphics.setColor(Color.MAGENTA);
         graphics.setFont(fontConfig);
 
-        // write a phase in new image
+        // write a phrase in new image
         graphics.drawString(stickerText, 0, newHeigth - 100);
         
         // write a new image in a file
