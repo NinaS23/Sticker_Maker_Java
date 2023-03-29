@@ -38,5 +38,5 @@ to create your sticker:
 run the project
 ```
 
-finally, to see your sticker, go to output directory.
+finally, to see your sticker, go to output folder.
 
