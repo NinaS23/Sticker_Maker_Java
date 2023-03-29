@@ -1,7 +1,6 @@
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.InputStream;
 import java.net.URL;
 import java.awt.Color;
@@ -13,7 +12,9 @@ public class StickerMaker {
 
     public void stickerMaker() throws Exception {
         // read image
-        InputStream inputStream = new URL("https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/TopMovies_1.jpg").openStream();
+        InputStream inputStream = new URL(
+                "https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/TopMovies_1.jpg")
+                .openStream();
         BufferedImage originalImage = ImageIO.read(inputStream);
 
         // create a new image with transparency and a new Heigth
