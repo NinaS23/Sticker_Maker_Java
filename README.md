@@ -1,18 +1,42 @@
 ## Getting Started
+  <div align='center'>
+    <img height="240px" src="https://em-content.zobj.net/source/microsoft-teams/337/milky-way_1f30c.png">
+  </div>
+  
+<p align = "center">
+   <img src="https://img.shields.io/badge/author-NinaS23-4dae71?style=flat-square" />
+</p>
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+<div align="center">
+  <h3>Build With</h3>
+  <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white" height="30px"/>
+</div>
 
-## Folder Structure
+#  features developed 
+- [x] create a sticker with a google img url
 
-The workspace contains two folders by default, where:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+# Getting Started
+To clone the project, run the following command:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+```git
+git clone https://github.com/NinaS23/Sticker_Maker_Java.git
+```
+Then navigate to the project folder in ApiApplication.java and:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+```git
+run the project
+```
+then you can choose :
+ - sticker name
+ - sticker text
+ - sticker img (copy the url of the chosen img)
+ 
+then, go to the App.java file and place the chosen properties in the setters below. example
+```js
+    sticker.setStickerName("dog");
+    sticker.setStickerText("playful dog");
+    sticker.setUrl("https://publish.purewow.net/wp-content/uploads/sites/2/2021/06/smallest-dog-breeds-toy-poodle.jpg?fit=728%2C524");
+```
+finally, to see your sticker, go to output directory.
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
