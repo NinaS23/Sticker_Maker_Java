@@ -9,7 +9,7 @@ import javax.imageio.ImageIO;
 
 public class StickerMaker {
 
-    public void buildSticker(InputStream inputStream, String fileName) throws Exception {
+    public void buildSticker(InputStream inputStream, String fileName, String stickerText) throws Exception {
         // read image
         BufferedImage originalImage = ImageIO.read(inputStream);
 
@@ -23,13 +23,13 @@ public class StickerMaker {
         Graphics2D graphics = (Graphics2D) newImage.getGraphics();
         graphics.drawImage(originalImage, 0, 0, null);
 
-        // FONT CONFIG
+        // Font config
         var fontConfig = new Font(Font.SANS_SERIF, Font.BOLD, 64);
         graphics.setColor(Color.MAGENTA);
         graphics.setFont(fontConfig);
 
         // write a phase in new image
-        graphics.drawString("GOOD FATHER", 0, newHeigth - 100);
+        graphics.drawString(stickerText, 0, newHeigth - 100);
         
         // write a new image in a file
         ImageIO.write(newImage, "png", new File(fileName));
