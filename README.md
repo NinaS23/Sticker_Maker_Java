@@ -22,8 +22,6 @@ To clone the project, run the following command:
 ```git
 git clone https://github.com/NinaS23/Sticker_Maker_Java.git
 ```
-Then navigate to the project folder in ApiApplication.java and:
-
 then you can choose :
  - sticker name
  - sticker text
