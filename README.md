@@ -24,19 +24,21 @@ git clone https://github.com/NinaS23/Sticker_Maker_Java.git
 ```
 Then navigate to the project folder in ApiApplication.java and:
 
-```git
-run the project
-```
 then you can choose :
  - sticker name
  - sticker text
  - sticker img (copy the url of the chosen img)
  
-then, go to the App.java file and place the chosen properties in the setters below. example
+then, go to the App.java file and place the chosen properties in the setters below. example:
 ```js
     sticker.setStickerName("dog");
     sticker.setStickerText("playful dog");
     sticker.setUrl("https://publish.purewow.net/wp-content/uploads/sites/2/2021/06/smallest-dog-breeds-toy-poodle.jpg?fit=728%2C524");
 ```
+to create your sticker:
+```git
+run the project
+```
+
 finally, to see your sticker, go to output directory.
 
